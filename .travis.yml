@@ -21,6 +21,20 @@ matrix:
           env:
             - PATH=/c/Python37:/c/Python37/Scripts:$PATH
             - TRAVIS_PYTHON_VERSION=3.7
+        # Adding ppc64le jobs
+        - python: 3.5
+          arch: ppc64le
+          dist: trusty
+        - python: 3.6
+          arch: ppc64le
+          dist: trusty
+        - python: 3.7
+          arch: ppc64le
+          dist: xenial
+        - python: 3.8
+          arch: ppc64le
+          dist: xenial
+
 addons:
   apt:
     packages:
